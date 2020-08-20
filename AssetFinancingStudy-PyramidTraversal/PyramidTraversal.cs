@@ -29,9 +29,9 @@ namespace AssetFinancingStudy_PyramidTraversal
             //initiate the current root
             BinaryTreeNode root = new BinaryTreeNode(pyramid[start][end]);
 
-            //Recursively perform the function for the left node 
+            //Recursively perform the function to set the left node 
             root.Left = ConstructTreeFromPyramid(pyramid, start + 1, end);
-            //Recursively perform the function for the left node 
+            //Recursively perform the function to set the right node 
             root.Right = ConstructTreeFromPyramid(pyramid, start + 1, end + 1);
 
             return root;
