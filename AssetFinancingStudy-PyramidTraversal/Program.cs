@@ -14,8 +14,9 @@ namespace AssetFinancingStudy_PyramidTraversal
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            var lines = File.ReadLines("input.txt");
             List<List<int>> pyramid = new List<List<int>>();
+            var lines = File.ReadLines("input.txt");
+            
             foreach (var line in lines)
             {
                 pyramid.Add(line.Split(' ').Select(x => Convert.ToInt32(x)).ToList());
